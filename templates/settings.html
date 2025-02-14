@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="icon" href="/static/uploads/download-removebg-preview.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" flex items-center justify-center min-h-screen" style="background-color: #FEFAD9;">
+    <nav class="p-4 fixed w-full top-0 z-50" style="background-color: #C5E2B6;">
+        <div class="max-w-9xl mx-auto flex justify-between items-center text-white">
+          
+            <div class="flex items-center space-x-1">
+                <img src="/static/uploads/download-removebg-preview.png" alt="BicutanMed Logo" class="h-12 w-10 object-contain">
+                <a href="/index" class="text-2xl text-black font-bold" style="font-family: 'Libre Baskerville', Georgia, serif;">BicutanMed</a>
+                <h1 class="text-black font-bold">Note: You can edit your information here.</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-10 rounded-lg shadow-md w-full sm:max-w-4xl" style="background-color: #C5E2B6;">
+        <div class="flex items-center space-x-1 justify-center">
+            <img src="/static/uploads/acc.jpg" alt="Uniwork Logo" class="h-20 w-20 object-contain">
+        </div>
+
+        <h2 class="text-2xl font-bold text-left text-stone-950 mb-1 text-center" style="font-family: 'Libre Baskerville', Georgia, serif; ">John Doe</h2>
+        <h2 class="text-xl font-bold text-left text-stone-950 mb-1 text-center" style="font-family: 'Libre Baskerville', Georgia, serif; ">Internship / OJT</h2>
+        <form action="/index" method="POST" class="space-y-6">
+
+            <div class="grid grid-cols-6 gap-4">
+                <div class="p-10 rounded-lg shadow-md w-96 col-start-1 col-end-3" style="background-color: #7f9475;">
+                    <label for="username" class="block text-sm text-black font-bold mt-2">Position: OJT 🖉</label>
+                    <label for="username" class="block text-sm text-black font-bold mt-2">Department: PhilHealth        🖉</label>
+                    <label for="username" class="block text-sm text-black font-bold mt-2">Role: Web Dev 🖉</label>
+                </div>
+
+                <div class="p-10 rounded-lg shadow-md w-96 col-start-4 col-end-7" style="background-color: #7f9475;">
+                    <label for="fname" class="block text-sm text-black font-bold mt-2">First Name:</label>
+                    <input type="text" name="username" id="username" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <label for="lname" class="block text-sm text-black font-bold mt-2">Last Name:</label>
+                    <input type="text" name="username" id="username" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <label for="email" class="block text-sm text-black font-bold mt-2">Email Add:</label>
+                    <input type="text" name="username" id="username" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <label for="address" class="block text-sm text-black font-bold mt-2">Address:</label>
+                    <input type="text" name="username" id="username" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <label for="phone" class="block text-sm text-black font-bold mt-2">Phone Number:</label>
+                    <input type="text" name="username" id="username" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <button class="w-20 bg-blue-50 text-black font-bold content-center py-2 rounded-xl hover:bg-green-600 transition duration-300" style="margin-top: 2%; margin-left: 40%;">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

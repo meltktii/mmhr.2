@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="/static/uploads/download-removebg-preview.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-cover" style="background-image: url(/static/uploads/bgg.png);">
+
+    <div class="p-10 rounded-lg shadow-md w-full sm:w-96" style="background-color: #afc9a2;">
+        <div class="flex items-center space-x-2">
+            <img src="/static/uploads/download-removebg-preview.png" alt="Uniwork Logo" class="h-20 w-20 object-contain">
+            <h2 class="text-2xl font-bold text-left text-stone-950 mb-1" style="font-family: 'Libre Baskerville', Georgia, serif;">Bicutan Medical Center, Inc.</h2>
+        </div>
+        <form action="/login" method="POST" class="space-y-6">
+            <div>
+                <label for="username" class="block text-sm text-black font-bold mt-8">User code:</label>
+                <input type="text" name="username" id="username" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm text-black font-bold">Password:</label>
+                <input type="password" name="password" id="password" class="mt-3 p-1 block w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <button type="submit" class="w-64 bg-blue-50 text-black font-bold content-center py-2 rounded-xl hover:bg-green-600 transition duration-300" style="margin-top: 10%; margin-left: 30px">Login</button>
+
+        </form>
+        
+        <div class="mt-4 text-center">
+            <p class="text-sm text-black">
+                Don't have an account? 
+                <a href="{{ url_for('register') }}" class="text-blue-500 font-bold">Create an account</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
